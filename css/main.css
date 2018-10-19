@@ -1,7 +1,7 @@
 body {
     font-family: 'Chakra Petch', sans-serif;
     margin: 0px;
-    color: #FFFFFF
+    color: #FFFFFF;
 }
 
 canvas {
@@ -10,9 +10,30 @@ canvas {
     width: 100%;
 }
 
+a {
+    color: #FFFFFF
+}
+
 .above {
+    text-align: center;
     height: 100vh;
     overflow-y: scroll;
     position: relative;
     z-index: 1;
+    background-color:rgba(0, 0, 0, 0.5);
+}
+
+.btn {
+    padding: 8px;
+    border-color: #FFFFFF;
+    background-color: Transparent;
+    color: #FFFFFF;
+    width: 20vh;
+    margin-top: 25px;
+    font-family: 'Chakra Petch', sans-serif;
+    background-repeat:no-repeat;
+}
+
+.form-control {
+    width: 65%;
 }
