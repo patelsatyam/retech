@@ -29,6 +29,7 @@ img {
 
 .above {
     text-align: center;
+    text-align: -moz-center;
     height: 100vh;
     overflow-y: scroll;
     position: relative;
@@ -74,4 +75,10 @@ img {
 .column {
   flex: 50%;
   padding: 5px;
+}
+
+@-moz-document url-prefix() {
+  legend {
+    width: 100%;
+  }
 }
