@@ -29,6 +29,8 @@ img {
 }
 
 .above {
+    padding-left: 2vh;
+    padding-right: 2vh;
     position: relative;
     text-align: center;
     text-align: -moz-center;
