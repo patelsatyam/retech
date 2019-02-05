@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>RE.T3CH</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="A 12 hour unique college hackathon" />
+	<meta name="keywords" content="RE.T3CH, retech, iips, davv, hackathon, indore, college" />
+	<meta name="author" content="adeen-s" />
+
+	<link href="https://fonts.googleapis.com/css?family=Chakra+Petch" rel="stylesheet">
+	<link rel="stylesheet" href="css/main.css">
+
+
+	</head>
+	<body>
+		<canvas id="q"></canvas>
+
+		<div class="above">
+			<h1>RE.T3CH</h1>
+			<h3>A unique college hackathon for the students of IIPS - DAVV, Indore</h3>
+
+			<h4>30th October, 2018 <br />International Institute of Professional Studies, DAVV, Indore, India</h4>
+
+			<br />
+			<br />
+
+			<h3>Thank you for participating. <br /> Check back later for stats, photos and report of the event.</h3>
+
+			<br />
+			<br />
+
+			<h2>Registrations Closed</h2>
+
+			<br />
+
+			<h2>Important details</h2>
+			<p>
+				<ul style="list-style-type: none;">
+					<li>Reporting time for the event will be 7 AM</li>
+					<li>The hackathon will continue till 7PM</li>
+					<li>Demonstrations and prize distribution will be on the next day</li>
+					<li>Lunch and snacks will be provided to the participants on the 30th of October</li>
+					<li>Our rule book will be provided to the registered teams for more details prior to the event</li>
+					<li>Participants must follow our code of conduct throughout the event</li>
+					<li>Organizers reserve the right to admission</li>
+				</ul>
+			</p>
+
+			<div class="sponsors">
+				<h2>Our Sponsors</h2>
+				<div class="row">
+					<div class="column">
+						<a href="https://education.github.com"><img src="res/GitHub_Logo_White.png" alt="GitHub logo" ></a>
+					</div>
+					<div class="column">
+						<a href="https://cloudflare.com"><img src="res/cf-logo-v-white.png" alt="Cloudflare logo" ></a>
+					</div>
+				</div>
+				<h4></h4>
+			</div>
+
+			<div class="footer">
+					<a href="/">Home</a>&emsp;
+					<a href="/coc.html">Code Of Conduct</a>&emsp;
+					<a href="http://iips.edu.in">IIPS</a>&emsp;
+					<a href="https://codeindore.github.io">codeIndore( )</a>&emsp;
+					<a href="mailto:codeindore@gmail.com">Contact Us</a>
+			</div>
+
+		</div>
+
+		<script type="text/javascript">
+			var s = window.screen;
+			var width = q.width = s.width;
+			var height = q.height = s.height;
+			var letters = Array(256).join(1).split('');
+
+			var draw = function () {
+				q.getContext('2d').fillStyle='rgba(0,0,0,.05)';
+				q.getContext('2d').fillRect(0,0,width,height);
+				q.getContext('2d').fillStyle='#0F0';
+				letters.map(function(y_pos, index){
+					text = String.fromCharCode(50+Math.random()*45);
+					x_pos = index * 10;
+					q.getContext('2d').fillText(text, x_pos, y_pos);
+					letters[index] = (y_pos > 758 + Math.random() * 1e4) ? 0 : y_pos + 10;
+				});
+			};
+			setInterval(draw, 33);
+		</script>
+	</body>
+</html>
